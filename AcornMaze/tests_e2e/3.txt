@@ -1,0 +1,1 @@
+This tests a more complicated system involving all possible methods, such as bumping into walls, going in teleporters picking up water, and putting out fire

@@ -1,0 +1,58 @@
+Section 1 - Testing
+
+a) They ensure that our code is running as intended, limiting the amount of errors and mishaps that will occur. Writing well written test-cases can point you to places in your code which need to be changed for the better in order to make the code better suit the required parameters. Saves time by making it easier to find bugs that could be introduced into your code later in the system 
+
+b) Mocking is when the unit test being tested has external dependencies. Mocking is used to isolate and maintain focus on the code that is actually being tested, and to ignore these external factors. In mocking the dependencies are replaced by replacement objects that are specifically controlled to simulate the original dependencies usage. [1].
+
+ Some benefits are:
+ - They can be easily distinguished from any dependencies
+ - They are really efficient in speeding up your tests
+
+ Some disadvantages are:
+ - They need to understand what the code being tested actually does and therefore only work for white box Testing
+ - They are based of the implementation of your code, so if you change something you also have to change the tests.
+
+ They are commonly used in unit testing.
+
+c) The Morris Worm was a program developed by a student at Cornell University in 1988. The program spread crazily and crashed thousands of computers because of a coding error due to not enough testing. This was the first computer worm., and the cost of cleaning up this error was up to $100 Million. [2]
+
+
+
+Section 2 - Solver 
+
+a) BFS stands for Breadth First Search. 
+    Strengths:
+    - For BFS if there is a solution then it will definitely be found.
+    - It will generally find the solution with the least amount of steps as well.
+    
+    Weaknesses:
+    - The solution is time consuming
+    - Requires more memory as all nodes are stored before proceeding to the next level.
+
+    You would use BFS for finding the shortest path [3]
+
+b) DFS stands for Depth First Search
+
+    Strengths:
+    - Smaller memory requirement
+    - A general solution can be found with a smaller number of searches than BFS
+
+    Weaknesses:
+    - Takes a long time to visit neighbouring nodes if the depth is large
+    - No guarantee to find the best solution if more than one exists
+
+    You would use DFS for topological sorting and finding connected components. [4]
+
+c) If there are no obstacles in the way between the starting and ending cell, and they are very close to each other DFS would most likely be quicker. However, as this is more often not the case most of the time BFS is faster than DFS.
+
+d) The fire/water mechanic means that you can't just record where you have been. This is because it is often necessary to backtrack in order to get to the end of the maze successfully, as the amount of water buckets you have will change based on the situation. 
+
+
+
+References:
+
+[1] https://anthonysciamanna.com/2014/08/02/use-mock-objects-wisely.html
+[2] https://raygun.com/blog/costly-software-errors-history/
+[3] https://stackoverflow.com/questions/55273482/bfs-and-dfs-disadvantages
+[4] https://www.quora.com/What-are-the-advantages-of-using-BFS-over-DFS-or-using-DFS-over-BFS-What-are-the-applications-and-downsides-of-each
+
